@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anacristina's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/paqueteria/truck.png">
+            </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Paqueteria</h1>
+                    <p> Contamos con dos paqueterias que tienen mas de 10 anos
+                         de experiencia! Cobramos por medida no por peso!</p>
+                          <div class="tab-titles" >
+                            <p class="tab-links active-link" onclick="opentab('skills')">Paqueteria Semanal</p>
+                            <p class="tab-links " onclick="opentab('experience')" >Paqueteria Mensual</p>
+                            <p class="tab-links" onclick="opentab('education')">Cajas Y Precio</p>
+                          </div>
+                          <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>Nuestra paqueteria semanal ofrece servicio de paqueteria para todo mexico! Ofrecemos entregas a domicilio Contamos con personal proffesional y honestidad. Nuestro servicio es rapido Y seguro! Promociones, Mensuales!
+                                    Nuestra proxima salida sera el 29 de Enero Los esaremos esperando!</li>
+                                
+                            </ul>
+                          </div>
+                          <div class="tab-contents" id="experience">
+                            <ul>
+                                <li>Nuestra paqueteria mensual sido el transportador de suenos de millones de mexicanos que dia a dia emigran en busca del sueno
+                                    Americano. Actualmente estamos importando mas de 10,000 solicitudes cada mes, el servicio ha sido nuestra proridad y es por ello, que cada dia mas empresas y personas nos entregan su confianza al realizar sus envios con nosotros!
+                                    Contamos con salidas semanales!
+                                </li>
+                            </ul>
+                          </div>
+                          <div class="tab-contents" id="education">
+                            <ul>
+                                <li>The University of Texas at Austin<br></li>
+                                <img class="paqueteria-box" src="images/paqueteria/small.jpg">
+                                <br>
+                                <br>
+                                <br>
+                                <li>The University of Texas at Austin<br></li>
+                                <img class="paqueteria-box" src="images/paqueteria/IMG_1214.jpg">
+                                <br>
+                                <br>
+                                <br>
+                                <li>The University of Texas at Austin<br></li>
+                                <img class="paqueteria-box" src="images/paqueteria/large.jpg">
+                                <br>
+                                <br>
+                                <br>
+                                <li>The University of Texas at Austin<br></li>
+                                <img class="paqueteria-box" src="images/paqueteria/extralarge.jpg">
+                                <!-- <li>Coding/Programing Bootcamp Certificate</li> -->
+                            </ul>
+                          </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+

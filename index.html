@@ -1,110 +1,332 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script src="script.js" defer></script>
     <title>A&B Multiservice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav>
-  <div class="topnav">
-    <ul>
-    <a href="#servicio">Servicios</a>
-    <a href="#envios">Envios De Dinero</a>
-    <a href="#paqueteria">Paqueteria</a>
-    <a href="#ubicacion">Ubicacion</a>
-  </ul>
-    <a href="./login.html">  <button>Login</button> </a>
-  </div>
-</nav>
-<hero class="welinfo">
-  <div class="info">
-    <h1>Bienvenidos a A&B Multiservice!</h1>
-    <P>Ofrecemos envios de dinero, cambios de cheques y mucho mas!</P>
-    <p>Tenemos paqueteria a Mexico, Honduras, Guatemala, Y El Salvador!</p>
-  </div>
-  <img class="logo" src="./img/basave.png" alt="logo" />
-   <!-- <div class="navbar-burger" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }">
-                  <span id="burgerQuiz">Quiz</span>
-                  <span id="burgerExplore">Explore</span>
-                  <span id="burgerBookshelf">Bookshelf</span>
-                </div> -->
-              </hero>
-<br>
-<br>
-<br>
-<section>
-  <div div="servicios"></div>
-  <h1 id="servicio">Servicios</h1>
-  <div class="container">
-    <div class="slider-wrapper">
-      <button id="prev-slide" class="slide-button material-symbols-rounded">
-        chevron_left
-      </button>
-      <ul class="image-list">
-        <img class="image-item" src="./img/IMG_0966.heic" alt="img-1" />
-        <img class="image-item" src="./img/IMG_0966.heic" alt="img-1" />
-        <img class="image-item" src="./img/IMG_0966.heic" alt="img-1" />
-        <img class="image-item" src="./img/IMG_0966.heic" alt="img-1" />
-         <img class="image-item" src="./img/IMG_0966.heic" alt="img-1" />
-      </ul>
-      <button id="next-slide" class="slide-button material-symbols-rounded">
-        chevron_right
-      </button>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/LOGO2.PNG" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Porfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Bienvenidos a  <span>A&B Multiservice</span><br></h1>
+            </div>
+        </div>
     </div>
-    <div class="slider-scrollbar">
-      <div class="scrollbar-track">
-        <div class="scrollbar-thumb"></div>
-      </div>
+   
+    <!-- Services  -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Services </h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2> Envios de Dinero</h2>
+                <p> Envia su dinero de forma rapida y segura desde los Estados Unidos con A&B Multiservice y aprovecha nuestros excelentes tipos de cambio y bajas cuotas de transferencia!
+                    Visitanos en nuestra surcursal Y haz su envio con nosotros</p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2> Paqueteria a Todo Mexico</h2>
+                <p> Contamos con salidas semanales con entrega a domicilio!
+                    Nuestros precios se basa por medida no por peso! Hazle Click abajo para conocer mas!
+                    Haz click abaja para mas informacion</p>
+                    <a href="./paqueteria.html">Learn More</a>
+            </div>
+            <div>
+                <i class="fas fa-app-store"></i>
+                <h2> Tramites de Placa Y Titulos</h2>
+                <p> Servicios Individuales, Tramite de Placas y Titulos! 
+                    Tramita la Placa de su vehiculo sin tener que desplazarte al dmv</p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fas fa-app-store"></i>
+                <h2> Income Tax</h2>
+                <p> Obtenga mas de los servicios de preparacion de impuestos de A&B
+                    Multiservice! Garantizamos su declaracion de impuestos mas precisa! Paga tus impuesto, Obtenga el estado de su reembolso.
+                    Encuentre formularios del IRS y resouestas a preguntas sobre impuestos. Le ayudamos a comprender y cumplir con sus responsabilidades tributarias!
+                    Haz tu cita con nosotros hoy</p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fas fa-app-store"></i>
+                <h2> Tramite De ITIN Y Renovaciones de ITIN</h2>
+                <p> A&B Multiservice hace que el proceso de ITIN sea menos complicado al ayudarlo a solicitar un
+                    ITIN o renovar su numero de identificaoin fiscal GRATIS con la preparacion de impuestos pagados</p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fas fa-app-store"></i>
+                <h2> Citas en el
+                    Consulado MX</h2>
+                <p> Usted Podra solicitar informacion sobre los requisitos para el tramite de Passaporte Mexicano, Matriculas consular, Credencial de Elector, o actas de nacimiento Mexicanos.
+                    Agende su cita en el Consulado Mexicano desde A&B Multiservice
+                    Visitanos para mas informacion</p>
+                    <a href="#">Learn More</a>
+            </div>
+        </div>
     </div>
-  </div>
-</section>
-<br>
-<br>
-<section>
-  <div div="envios"></div>
-  <h1 id="envios">Envios De Dinero</h1>
-  <p>Envia dinero a tus familiares </p> 
-  <br>
-  <p>Tenemos tiendas como:</p>
-  <img class="banamex" src="./img/tiendas/banamex.png" alt="banamex"/>
-  <img class="aurrera" src="./img/tiendas/aurrera.jpg" alt="aurrera"/>
-  <img class="azteca" src="./img/tiendas/banco-azteca.png" alt="ban-azteca"/>
-  <img class="coppel" src="./img/tiendas/coppel.png" alt="coppel"/>
-  <img class="elektra" src="./img/tiendas/elektra.png" alt="elektra"/>
-  <img class="soriana" src="./img/tiendas/soriana.png" alt="soriana"/>
-  <img class="walmart" src="./img/tiendas/walmart.png" alt="walmart"/>
-</section>
-<br>
-<br>
-<section>
-  <div div="paqueteria"></div>
-  <h1 id="paqueteria">Paqueteria</h1>
-</section>
-<br>
-<br>
-<section>
-  <div class="ubicacion"></div>
-  <h1 id="ubicacion">Ubicacion</h1>
-  <p>Estamos ubicados enfrente de la fiesta!
-    <br>
-    2902 S BUCKNER BLVD SUITE 235, DALLAS TX 75227
-  </p>
-  <div style="text-align:center"> 
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.166692911477!2d-96.68526752474591!3d32.7613111847892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864ea3748ad86f25%3A0xb4aba0402354ee10!2s2902%20S%20Buckner%20Blvd%2C%20Dallas%2C%20TX%2075227!5e0!3m2!1sen!2sus!4v1698886743946!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-</section>
-<br>
-<br>
-<footer>
-  <h2>Los estaremos esperando!</h2>
-</footer>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/pin-location-icon-sign-symbol-design-free-png.webp">
+            </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <!DOCTYPE html>
+        
+        <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
+        
+        <style>
+        #map {
+            height: 600px;
+        }
+        
+        a:link, a:visited {
+            color: white;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        .landmark {
+            width: 250px;
+            padding: 7px 0 0 0;
+            background: rgba(247, 247, 247, 0.75);
+            border-radius: 5px;
+            box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.29);
+            font-family: Helvetica, Arial, sans-serif;
+            -webkit-transform-origin: 0 10px;
+            transform-origin: 0 10px;
+        }
+        
+        .landmark h1 {
+            margin-top: 0;
+            padding: 5px 15px;
+            background: #2aaef5;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 16px;
+            font-weight: 300;
+        }
+        
+        .landmark section {
+            padding: 0 15px 5px;
+            font-size: 14px;
+        }
+        
+        .landmark section p {
+            margin: 5px 0;
+        }
+        
+        .landmark:after {
+            content: "";
+            position: absolute;
+            top: 7px;
+            left: -13px;
+            width: 0;
+            height: 0;
+            margin-bottom: -13px;
+            border-right: 13px solid #2aaef5;
+            border-top: 13px solid rgba(0, 0, 0, 0);
+            border-bottom: 13px solid rgba(0, 0, 0, 0);
+        }
+        
+        @-webkit-keyframes scale-and-fadein {
+            0% {
+                -webkit-transform: scale(0.2);
+                opacity: 0;
+            }
+        
+            100% {
+                -webkit-transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes scale-and-fadein {
+            0% {
+                transform: scale(0.2);
+                opacity: 0;
+            }
+        
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        </style>
+        
+        </head>
+        
+        <body>
+        <div id="map"></div>
+        
+        <script>
+        mapkit.init({
+            authorizationCallback: function(done) {
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "/services/jwt");
+                xhr.addEventListener("load", function() {
+                    done(this.responseText);
+                });
+                xhr.send();
+            }
+        });
+        
+        // Landmarks data
+        var sanFranciscoLandmarks = [
+            { coordinate: new mapkit.Coordinate(37.7951315, -122.402986), title: "Transamerica Pyramid", phone: "+1-415-983-5420", url: "http://www.transamericapyramidcenter.com/" },
+            { coordinate: new mapkit.Coordinate(37.7954201, -122.39352), title: "Ferry Building", phone: "+1 (415) 983-8030", url: "http://www.ferrybuildingmarketplace.com" },
+            { coordinate: new mapkit.Coordinate(37.8083396, -122.415727), title: "Fisherman's Wharf", phone: "+1 (415) 673-3530", url: "http://visitfishermanswharf.com" },
+            { coordinate: new mapkit.Coordinate(37.8023553, -122.405742), title: "Coit Tower", phone: "+1 (415) 249-0995", url: "http://sfrecpark.org/destination/telegraph-hill-pioneer-park/coit-tower/" },
+            { coordinate: new mapkit.Coordinate(37.7552305, -122.452624), title: "Sutro Tower", phone: "+1 (415) 681-8850", url: "http://www.sutrotower.com" },
+            { coordinate: new mapkit.Coordinate(37.779267, -122.419269), title: "City Hall", phone: "+1 (415) 701-2311", url: "http://sfgsa.org/index.aspx?page=1085" },
+            { coordinate: new mapkit.Coordinate(37.8184493, -122.478409), title: "Golden Gate Bridge", phone: "+1 (415) 921-5858", url: "http://www.goldengatebridge.org" },
+            { coordinate: new mapkit.Coordinate(37.7785538, -122.514035), title: "Cliff House", phone: "+1 (415) 386-3330", url: "http://www.cliffhouse.com/" }
+        ];
+        
+        // Landmark annotation callout delegate
+        var CALLOUT_OFFSET = new DOMPoint(-148, -78);
+        var landmarkAnnotationCallout = {
+            calloutElementForAnnotation: function(annotation) {
+                return calloutForLandmarkAnnotation(annotation);
+            },
+        
+            calloutAnchorOffsetForAnnotation: function(annotation, element) {
+                return CALLOUT_OFFSET;
+            },
+        
+            calloutAppearanceAnimationForAnnotation: function(annotation) {
+                return ".4s cubic-bezier(0.4, 0, 0, 1.5) 0s 1 normal scale-and-fadein";
+            }
+        };
+        
+        // Landmarks annotations
+        var annotations = sanFranciscoLandmarks.map(function(landmark) {
+            var annotation = new mapkit.MarkerAnnotation(landmark.coordinate, {
+                callout: landmarkAnnotationCallout,
+                color: "#c969e0"
+            });
+            annotation.landmark = landmark;
+            return annotation;
+        });
+        
+        var map = new mapkit.Map("map");
+        map.showItems(annotations);
+        
+        // Landmark annotation custom callout
+        function calloutForLandmarkAnnotation(annotation) {
+            var div = document.createElement("div");
+            div.className = "landmark";
+        
+            var title = div.appendChild(document.createElement("h1"));
+            title.textContent = annotation.landmark.title;
+        
+            var section = div.appendChild(document.createElement("section"));
+        
+            var phone = section.appendChild(document.createElement("p"));
+            phone.className = "phone";
+            phone.textContent = annotation.landmark.phone;
+        
+            var link = section.appendChild(document.createElement("p"));
+            link.className = "homepage";
+            var a = link.appendChild(document.createElement("a"));
+            a.href = annotation.landmark.url;
+            a.textContent = "website";
+        
+            return div;
+        }
+        </script>
+                
+                            
+                          </div>
+                          
+                </div>
+            
+        </div>
+    </div>
+
+
+<!-- Contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact ME</h1>
+                <p><i class="fa-solid fa-square-envelope"></i> ✉️ anasegovia505@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 📞 512-298-9239</p>
+                <div class="social-icons"> </div>
+                <a href="htpps://facebook.com"><i class="fa-brands fa-facebook"></i> </a>
+                <a href="htpps://facebook.com"><i class="fa-brands fa-instagram"></i> </a>
+                <a href="https://www.linkedin.com/in/anacristina-segovia-819948287"><i class="fa-brands fa-linkedin"></i> </a>
+                    <a href="images/Resume-2.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Info" placeholder="Correo Electronico/Numero de Telefono" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"> </textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright Made with <i class="fa-solid fa-heart"></i>  ❤️ by A&B Multiservice</p>
+    </div>
+</div>
+<script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+        function openmenu (){
+            sidemenu.style.right= "0";
+        }
+        function closemenu (){
+            sidemenu.style.right= "-200px";
+        }
+    </script>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyam7ARThooiMiJcKDCxx43TZBk5cck54h7wu8vOWQYpXN2x4JiPQ5qJiNzhQINVShd/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
-
-
-
-
-
