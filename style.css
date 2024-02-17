@@ -267,7 +267,12 @@ transform: scale(1.1);
     font-size: 25px;
 } */
 .social-icons{
-    margin-top: 30px;
+    width: 50px;
+    margin-left: auto;
+}
+.social-facebook{
+    width: 80px;
+    margin-left: -16px;
 }
 .social-icons a {
     text-decoration: none;
