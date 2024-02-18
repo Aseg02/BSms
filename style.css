@@ -27,6 +27,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-left:-115px;
 }
 .logo{
     width: 140px;
@@ -262,6 +263,9 @@ transform: scale(1.1);
     width: 100%;
     padding-top: 25%; /*16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   }
+  .horario {
+    font-size: 17px;
+  }
 /* COntact */
 .contact-left{
     flex-basis: 35%;
@@ -332,6 +336,16 @@ form .btn2{
 .copyright i {
     color: #ff004f;
 }
+.face-btn{
+    margin-left: 65px;
+    margin-top: -115px;
+
+}
+.number {
+    margin-left: 35px;
+    margin-top: -75px;
+    font-size: 25px;
+}
 /*PAQUETERIA*/
 .paqueteria-box {
     width: 325px;
@@ -339,6 +353,7 @@ form .btn2{
 }
 .precios-paqueteria{
     text-align: center;
+    font-size: 18px;
 }
 /* Responsive small screen */
 nav .fas {
